@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
@@ -29,26 +30,46 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="Number of People in Party"
         tools:layout_editor_absoluteX="9dp"
         tools:layout_editor_absoluteY="113dp" />
 
-    <EditText
-        android:id="@+id/editTextNumPeople"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="number"
-        tools:layout_editor_absoluteX="5dp"
-        tools:layout_editor_absoluteY="140dp" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3 - Three"
+            tools:layout_editor_absoluteX="14dp"
+            tools:layout_editor_absoluteY="206dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2 - Two"
+            tools:layout_editor_absoluteX="14dp"
+            tools:layout_editor_absoluteY="178dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 - One"
+            tools:layout_editor_absoluteX="14dp"
+            tools:layout_editor_absoluteY="146dp" />
+    </RadioGroup>
 
     <CheckBox
         android:id="@+id/checkBoxService"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Outstanding Service"
-        tools:layout_editor_absoluteX="11dp"
-        tools:layout_editor_absoluteY="229dp" />
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="269dp" />
 
     <Button
         android:id="@+id/buttonCalc"
@@ -56,8 +77,8 @@
         android:layout_height="wrap_content"
         android:onClick="onClickButtonCalculate"
         android:text="Calculate Tip"
-        tools:layout_editor_absoluteX="14dp"
-        tools:layout_editor_absoluteY="266dp" />
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="301dp" />
 
     <TextView
         android:id="@+id/textViewTotalTip"
@@ -65,14 +86,14 @@
         android:layout_height="wrap_content"
         android:text="Total Tip:"
         tools:layout_editor_absoluteX="17dp"
-        tools:layout_editor_absoluteY="313dp" />
+        tools:layout_editor_absoluteY="356dp" />
 
     <TextView
         android:id="@+id/textViewTipPerPerson"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Tip per person:"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="342dp" />
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="384dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
