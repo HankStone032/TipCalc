@@ -9,7 +9,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-
+    // Declare needed variables for widgets
     EditText etBill;
     EditText etNumPeople;
     TextView tvTotalTip;
